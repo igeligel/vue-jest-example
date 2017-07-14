@@ -20,4 +20,24 @@ describe('Test suite for HelloComponent', () => {
       expect(firstHeading.textContent).toContain('I am a cool message');
     });
   });
+
+  it('Test toggling method', () => {
+    const ClonedComponent = Vue.extend(HelloComponent);
+    const NewComponent = new ClonedComponent().$mount();
+    renderer.renderToString(NewComponent, (err, str) => {
+      let dom = new jsdom.JSDOM(str);
+      let firstHeading = dom.window.document.querySelector('h1');
+      expect(firstHeading.classList.length).toBe(1);
+      expect(firstHeading.classList).toContain('blue');
+      NewComponent.toggleClass();
+      renderer.renderToString(NewComponent, (errToggleClass, strToggleClass) => {
+        // Now the classes should have changed.
+        dom = new jsdom.JSDOM(strToggleClass);
+        firstHeading = dom.window.document.querySelector('h1');
+        expect(firstHeading.classList.length).toBe(2);
+        expect(firstHeading.classList).toContain('red');
+        expect(firstHeading.classList).toContain('shadow');
+      });
+    });
+  });
 });
