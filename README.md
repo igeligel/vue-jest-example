@@ -1,4 +1,4 @@
-# vue-jest-example by <a href="https://github.com/igeligel">igeligel</a>
+# vue-jest-example by <a href="https://github.com/igeligel">igeligel</a> [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=How+to+test+Vue.js+components+with+Jest&url=https%3A%2F%2Fmedium.com%2F%40kevin_peters%2Funit-testing-vue-js-components-with-jest-86e14ef499da&via=kevinpeters_&hashtags=vue%2Cjest%2Ctesting%2Cwebdev%2Cdevelopers)
 
 <div style="text-align:center"><img src ="https://cdn-images-1.medium.com/max/800/1*Ovx1dqLg7Jrw6m9Ttt2hsg.png" /></div>
 
@@ -8,14 +8,13 @@
 
 ## Dependencies
 
-| Dependency | Version |
-| -- | -- |
-| vue-cli-template-webpack | 2.0.0 |
-| jest | ^20.0.4 |
-| jest-vue-preprocessor | ^1.0.1 |
-| babel-jest | ^20.0.3 |
-| jsdom | ^11.1.0 |
-| vue-server-renderer | ^2.4.1 |
+|        Dependency        | Version |
+| ------------------------ | ------- |
+| jest                     | ^21.2.1 |
+| jest-vue-preprocessor    | ^1.3.1  |
+| babel-jest               | ^21.2.0 |
+| jsdom                    | ^11.3.0 |
+| vue-server-renderer      | ^2.5.3  |
 
 ## Installation
 
@@ -24,13 +23,13 @@ Clone this repository and run the commands:
 ### npm
 
 ```bash
-$ npm install
+npm install
 ```
 
 ### yarn
 
 ```bash
-$ yarn install
+yarn install
 ```
 
 ## How To Use
